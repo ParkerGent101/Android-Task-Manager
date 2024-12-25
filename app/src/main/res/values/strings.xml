@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+    <string name="task_list">Task List:</string>
+
+    <string name="add_word">Add Word</string>
+    <string name="default_date">Jan 1, 1960 1:00 AM</string>
+    <string name="default_text">lorem ipsum</string>
+    <string name="button_save">Save</string>
+    <string name="hint_word">Word…</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="channel_name">Main Activity Notification Channel</string>
+    <string name="channel_description">This is the default channel for notifications from the ScheduledNotifications Application</string>
+    <string name="EXTRA_ID">extra_id</string>
+    <string name="add_task">Add Task</string>
+    <string name="send_sms">Send SMS</string> <!-- New String Resource for SMS -->
+
+</resources>

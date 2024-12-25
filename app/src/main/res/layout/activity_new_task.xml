@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/big_padding"
+    android:background="@android:color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task Title:"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold" />
+
+    <!-- Layout for Task Name and Notes -->
+    <EditText
+        android:id="@+id/edit_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/hint_word"
+        android:inputType="textAutoComplete"
+        android:layout_marginBottom="@dimen/big_padding"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+    android:backgroundTint="@android:color/holo_orange_dark" />
+
+    <EditText
+        android:id="@+id/edit_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Notes"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:gravity="top|start"
+        android:layout_marginBottom="@dimen/big_padding"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_orange_dark" />
+
+    <!-- Layout for Date and Schedule Notification -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/big_padding">
+
+        <Button
+            android:id="@+id/etDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_date"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="viewEnd"
+            android:backgroundTint="@android:color/holo_orange_dark"
+        android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btnSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schedule Notification"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_save"
+        android:textColor="@android:color/black"
+    android:backgroundTint="@android:color/holo_orange_dark" />
+</LinearLayout>
